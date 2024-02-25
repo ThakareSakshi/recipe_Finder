@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+
+import RecipeContext from './Context/RecipeContext';
+import Home from './pages/Home';
+import Details from './pages/Details';
+import { createBrowserRouter,RouterProvider } from 'react-router-dom'
+import Favourite from './pages/Favourite';
 
 function App() {
+  const router=createBrowserRouter([
+    {
+        path:"/",
+        element:<Home/>
+    },
+    {
+        path:"/details/:id",
+        element:<Details/>
+    },
+    {
+      path:"/Liked",
+      element:<Favourite/>
+    }
+])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <RecipeContext>
+      <RouterProvider router={router}>
+
+      </RouterProvider>
+    </RecipeContext>
   );
 }
 
