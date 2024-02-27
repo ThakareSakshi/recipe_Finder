@@ -1,3 +1,32 @@
+
+# Recipe Finder
+hosted link:https://recipe-finder-zdwo.vercel.app/
+
+## Description
+
+Recipe Finder is a web application built using ReactJS that allows users to search for recipes based on ingredients or dish names. Users can easily discover new recipes, save their favorites, and even create personalized collections.
+
+
+## Features
+
+- **Search:** Users can search for recipes by entering ingredients or dish names.
+- **Save Favorites:** Users can save their favorite recipes for quick access later.
+- **Collections:** Create personalized collections of recipes for different occasions or preferences.
+- **Responsive Design:** The application is designed to work seamlessly across various devices and screen sizes.
+
+
+## Technologies Used
+
+- ReactJS
+- Tailwind CSS
+- Vegen-recipe-api
+
+## Contributing
+
+Contributions are welcome! If you find any bugs or have suggestions for improvement, please open an issue or submit a pull request.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
